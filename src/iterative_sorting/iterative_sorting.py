@@ -17,12 +17,16 @@ def selection_sort(arr):
 
 
 # TO-DO:  implement the Bubble Sort function below
-def bubble_sort( arr ):
-
+def bubble_sort(arr):
+    count = len(arr)
+    for i in range(count):
+        for j in range(count-1):
+            if arr[j+1] < arr[j]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
 
 
 # STRETCH: implement the Count Sort function below
-def count_sort( arr, maximum=-1 ):
+def count_sort(arr, maximum=-1):
 
     return arr
